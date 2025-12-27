@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameUp</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<body>
+
+    <div class="topbar">GameUp!</div>
+
+    <div class="gamecontainer">
+        {% for game in games %}
+            <div class="game">
+
+                {% if game.has_thumbnail %}
+                    <img src="/thumbnail/{{ game.folder }}" width="200">
+                {% endif %}
+
+                <h1 class="gametitle">{{ game.name }}</h1>
+
+                <p class="gamedesc">{{ game.desc }}</p>
+
+                <a href="/download/{{ game.folder }}">
+                    <button class="btndownload">Download</button>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+
+</body>
+</html>

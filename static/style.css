@@ -1,0 +1,68 @@
+/* Global */
+body {
+    margin: 0;
+    background-color: #121212;
+    color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top bar */
+.topbar {
+    background-color: #1e88e5;
+    color: white;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Game grid */
+.gamecontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Game card */
+.game {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Alternating colors */
+.game:nth-child(even) {
+    background-color: #262626;
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gametitle {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.gamedesc {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin-bottom: 12px;
+}
+
+/* Download button */
+.btndownload {
+    background-color: #1e88e5;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btndownload:hover {
+    background-color: #1565c0;
+}
